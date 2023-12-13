@@ -13,6 +13,8 @@ def errorHandling(guess):
         return False
     except:
         pass
+    if len(guess) < 1:
+        return False
     if len(guess) > 1:
         print("Only guess one letter")
         return False
@@ -65,6 +67,4 @@ while word != "completed" or strikes < (strikeAmount - 1):
 print(f"Congratulations! You guessed the word {word} within {guesses} tries, with {strikes} strikes out of {strikeAmount}")
                 
                     
-
-
             
