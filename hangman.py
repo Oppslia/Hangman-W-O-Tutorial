@@ -15,6 +15,8 @@ def errorHandling(guess):
         pass
     if len(guess) < 1:
         return False
+    if len(guess) < 1:
+        return False
     if len(guess) > 1:
         print("Only guess one letter")
         return False
